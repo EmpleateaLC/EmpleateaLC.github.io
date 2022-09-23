@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <link rel="stylesheet" href="assets/css/estiloCarta.css">
+    <link rel="stylesheet" href="carousel/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="carousel/owl.carousel.min.css">
+    <!-- =====BOX ICONS===== -->
+
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Portfolio </title>
+    <!-- css del footer-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1170px;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .footer {
+            background-color: #250C68;
+            padding: 70px 0;
+        }
+
+        .footer-col {
+            width: 25%;
+            padding: 0 15px;
+        }
+
+        .footer-col h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+        .footer-col ul li:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .footer-col ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        }
+
+        .footer-col .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+
+        .footer-col .social-links a:hover {
+            color: #24262b;
+            background-color: #ffffff;
+        }
+
+        /*responsive*/
+        @media(max-width: 767px) {
+            .footer-col {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media(max-width: 574px) {
+            .footer-col {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+
+    <header class="header">
+        <div class="header__container">
+            <img src="img/logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            <img src="assets/img/perfil1.jpg" alt="" class="header__img">
+            <a href="#" class="header__logo">
+            EmpleaTea 
+            </a>
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+        </div>
+    </header>
+    <!--========== NAV ==========-->
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+
+                <h1 class="home__title">Hola,<br>yo soy <span class="home__title-color">Miguel</span></h1>
+
+                <a href="#" class="button">Contactame</a>
+            </div>
+
+            <div class="home__social">
+                <a href="" class="home__social-icon"><i class='bx bxl-facebook'></i></a>
+                <a href="" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
+                <a href="" class="home__social-icon"><i class="bx bxl-github"></i></a>
+            </div>
+
+            <div class="home__img">
+                <img src="assets/img/miguis.png" alt="">
+            </div>
+        </section>
+        
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <h2 class="section-title">Acerca De</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/perfil1.jpg" alt="">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">Soy Miguel</h2>
+                    <p class="about__text">Hola mi nombre es Miguel Jhair Sierra Lagos, Tengo 19 años y soy de la ciudad
+                        de Esteli, Nicaragua. Curso en el 3do año de la carrera de ingieneria en sistemas en
+                        Farem-esteli. </p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Habilidades</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Habilidades profesionales</h2>
+                    <p class="skills__text">Tengo habilidad en las tecnicas de pintura tales como: Dibujo
+                        grafito(carbon), lapices de colores, tizas, tiza pastel, oleo, acrilico, acuarela y dibujo
+                        digital.</p>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='uil uil-pen skills__icon'></i>
+                            <span class="skills__name">Grafito</span>
+                        </div>
+                        <div class="skills__bar skills__html">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">95%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='uil uil-brush-alt skills__icon'></i>
+                            <span class="skills__name">Acrilico</span>
+                        </div>
+                        <div class="skills__bar skills__css">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='il uil-tear skills__icon'></i>
+                            <span class="skills__name">Acuerela</span>
+                        </div>
+                        <div class="skills__bar skills__js">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">65%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='uil uil-edit skills__icon'></i>
+                            <span class="skills__name">Lapices de Colores</span>
+                        </div>
+                        <div class="skills__bar skills__ux">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="assets/img/work33.jpg" alt="" class="skills__img">
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="portfolio">
+            <h2 class="section-title">Trabajos</h2>
+
+            <!-- <div class="work__container bd-grid">
+                <div class="work__img">
+                    <img src="assets/img/work1.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="assets/img/work2.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="assets/img/work44.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="assets/img/work4.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="assets/img/work5.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="assets/img/work6.jpg" alt="">
+                </div>
+            </div>-->
+            <div class="slider owl-carousel">
+                <div class="card">
+                    <div class="img"><img src="assets/img/work1.jpg" alt=""></div>
+                    
+                </div>
+                <div class="card">
+                    <div class="img"><img src="assets/img/work2.jpg" alt=""></div>
+                    
+                </div>
+                <div class="card">
+                    <div class="img"><img src="assets/img/work3.jpg" alt=""></div>
+                   
+                </div>
+                <div class="card">
+                    <div class="img"><img src="assets/img/work4.jpg" alt=""></div>
+                   
+                </div>
+                <div class="card">
+                    <div class="img"><img src="assets/img/work5.jpg" alt=""></div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contactme">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Name" class="contact__input">
+                    <input type="mail" placeholder="Email" class="contact__input">
+                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <input type="button" value="Enviar" class="contact__button button">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Compañia</h4>
+                    <ul>
+                        <li><a href="#">Acerca de nosotros</a></li>
+                        <li><a href="#">Nuestros servicios</a></li>
+                        <li><a href="#">Politica de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Obten ayuda</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Opciones de pago</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Advertising</h4>
+                    <ul>
+                        <li><a href="#">#</a></li>
+                        <li><a href="#">#</a></li>
+                        <li><a href="#">#</a></li>
+                        <li><a href="#">#</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Siguenos</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/miguel.Jhair.3139/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/maxart87/"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(".slider").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000, //2000ms = 2s;
+            autoplayHoverPause: true,
+        });
+    </script>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="main.js"></script>
+    <script src="assets/js/main2.js"></script>
+
+</body>
+
+</html>
