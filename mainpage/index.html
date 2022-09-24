@@ -1,453 +1,930 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="portafolio_miguel/assets/css/estilos.css">
+    <link rel="stylesheet" href="portafolio_miguel/styles.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <link rel="stylesheet" href="portafolio_miguel/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="carousel/style.css">
+    <link rel="stylesheet" href="styleGig.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- =====BOX ICONS===== -->
+
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" type="text/css"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:500,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="icon" type="image/x-icon" href="img/main.ico">
     <title>EMPLEATEA</title>
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-<!-- JavaScript Bundle with Popper -->
-<link rel="stylesheet" href="styleGig.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1170px;
+            margin: auto;
+        }
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .footer {
+            background-color: #24262b;
+            padding: 70px 0;
+        }
+
+        .footer-col {
+            width: 25%;
+            padding: 0 15px;
+        }
+
+        .footer-col h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+        .footer-col ul li:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .footer-col ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        }
+
+        .footer-col .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+
+        .footer-col .social-links a:hover {
+            color: #24262b;
+            background-color: #ffffff;
+        }
+
+        /*responsive*/
+        @media(max-width: 767px) {
+            .footer-col {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media(max-width: 574px) {
+            .footer-col {
+                width: 100%;
+            }
+        }
+    </style>
+    <!--
+SOFTY PINKO
+https://templatemo.com/tm-535-softy-pinko
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="portafolio_miguel/assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="portafolio_miguel/assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="portafolio_miguel/assets/css/templatemo-softy-pinko.css">
+
 </head>
+
 <body>
-    <nav class="navbar bg-primary fadeInDown">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="../img/logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            EMPLEATEA
-          </a>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="salir">
-                <a href="../index.html">Salir</a>
-            </button>
-        </form>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-      </nav>
-      <section class="section padding-top-70 padding-bottom-0 fadeInUp" id="features">
-        <div class="container">
-            <h2>Mejores calificados</h2>
-            <p>(Dar click a las cartas)</p>
-            <hr>
-            <div class="row">
-                <div class="cardContainer inactive">
-                    <div class="card">
-                        <div class="side front">
-                            <div class="img img1"></div>
-                            <div class="info">
-                                <h2>Mijhasila_18</h2>
-                                <p>#.</p>
-                                <div class="reviews">
-                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                        <path
-                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                    </svg>
-                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                        <path
-                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                    </svg>
-                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                        <path
-                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                    </svg>
-                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                        <path
-                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                    </svg>
-                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                        <path
-                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                    </svg>
-                                    <p style="color: grey;">100 Reseñas</p>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header">
+        <div class="header__container">
+            <!-- <img src="assets/img/perfil1.jpg" alt="" class="header__img"> -->
+            <div class="navbar-brand">
+                <img src="img/Logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                EMPLEATEA
+            </div>
+<!-- 
+            <div class="header__search">
+                <input type="search" placeholder="Search" class="header__input">
+                <i class='bx bx-search header__icon'></i>
+            </div> -->
+
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+        </div>
+        
+    </header>
+
+    <!-- ***** Menu Start ***** -->
+    <div class="nav" id="navbar">
+        <nav class="nav__container">
+            <div>
+                <a href="#" class="nav__link nav__logo">
+                    <span class="nav__logo-name">EMPLEATEA</span>
+                </a>
+
+                <div class="nav__list">
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Profile</h3>
+
+                        <a href="index.html" class="nav__link">
+                            <i class='bx bx-home nav__icon'></i>
+                            <span class="nav__name">Home</span>
+                        </a>
+
+                        <div class="nav__dropdown">
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-user nav__icon'></i>
+                                <span class="nav__name">Profile</span>
+                                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                            </a>
+
+                            <div class="nav__dropdown-collapse">
+                                <div class="nav__dropdown-content">
+                                    <a href="#" class="nav__dropdown-item">Passwords</a>
+                                    <a href="#" class="nav__dropdown-item">Mail</a>
+                                    <a href="../portafolio.html" class="nav__dropdown-item">Cuenta</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="side back">
-                            <div class="info">
-                                <h2>$</h2>
-                                <ul>
-                                    <li>#</li>
-                                    <li>#</li>
-                                    <li>#</li>
-                                </ul>
-                                <div class="btn">
-                                    <h4><a href="../portafolio.html">Ver portafolio</a></h4>
-                                    <svg fill="#333" height="24" viewBox="0 0 24 24" width="24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" />
-                                        <path d="M0-.25h24v24H0z" fill="none" />
-                                    </svg>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-message-rounded nav__icon'></i>
+                            <span class="nav__name">Messages</span>
+                        </a>
+                    </div>
+
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Menu</h3>
+
+                        <div class="nav__dropdown">
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-bell nav__icon'></i>
+                                <span class="nav__name">Portafolio</span>
+                                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                            </a>
+
+                            <div class="nav__dropdown-collapse">
+                                <div class="nav__dropdown-content">
+                                    <a href="#" class="nav__dropdown-item">Program</a>
+                                    <a href="#" class="nav__dropdown-item">Program</a>
+                                    <a href="#" class="nav__dropdown-item">Program</a>
                                 </div>
                             </div>
+
                         </div>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-compass nav__icon'></i>
+                            <span class="nav__name">Explore</span>
+                        </a>
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-bookmark nav__icon'></i>
+                            <span class="nav__name">Saved</span>
+                        </a>
                     </div>
                 </div>
+            </div>
 
-                <div class="cardContainer inactive">
-                    <div class="card">
-                        <div class="side front">
-                            <div class="img img1"></div>
-                            <div class="info">
-                                <h2>Mijhasila_18</h2>
-                                <p>#.</p>
-                                <div class="reviews">
-                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                        <path
-                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                    </svg>
-                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                        <path
-                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                    </svg>
-                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                        <path
-                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                    </svg>
-                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                        <path
-                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                    </svg>
-                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <defs>
-                                            <path d="M0 0h24v24H0V0z" id="a" />
-                                        </defs>
-                                        <clipPath id="b">
-                                            <use overflow="visible" xlink:href="#a" />
-                                        </clipPath>
-                                        <path clip-path="url(#b)"
-                                            d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4V6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z" />
-                                    </svg>
-                                    <p style="color: grey;">45 Reseñas</p>
-                                </div>
-                            </div>
+            <a href="../index.html" class="nav__link nav__logout">
+                <i class='bx bx-log-out nav__icon'></i>
+                <span class="nav__name">Desconectarse</span>
+            </a>
+        </nav>
+    </div>
+    <main class="l-main">
+        <!-- ***** Menu End ***** -->
+
+        <!-- ***** Header Area End ***** -->
+
+        <!-- ***** Welcome Area Start ***** -->
+        <div class="welcome-area" id="welcome">
+
+            <!-- ***** Header Text Start ***** -->
+            <div class="header-text">
+                <div class="container">
+                        <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
+                            <h1>Bienvenido a <br>
+                            </h1>
+                            <a href="#features" class="main-button-slider">Descubre mas</a>
                         </div>
-                        <div class="side back">
-                            <div class="info">
-                                <h2>$</h2>
-                                <ul>
-                                    <li>#</li>
-                                    <li>#</li>
-                                    <li>#</li>
-                                </ul>
-                                <div class="btn">
-                                    <h4><a href="../portafolio.html">Ver portafolio</a></h4>
-                                    <svg fill="#333" height="24" viewBox="0 0 24 24" width="24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" />
-                                        <path d="M0-.25h24v24H0z" fill="none" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
+            </div>
+            <!-- ***** Header Text End ***** -->
+        </div>
+        <!-- ***** Welcome Area End ***** -->
 
-                <div class="cardContainer inactive">
-                    <div class="card">
-                        <div class="side front">
-                            <div class="img img1"></div>
-                            <div class="info">
-                                <h2>Mijhasila_18</h2>
-                                <p>#.</p>
-                                <div class="reviews">
-                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                        <path
-                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                    </svg>
-                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                        <path
-                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                    </svg>
-                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                        <path
-                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                    </svg>
-                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                        <path
-                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                    </svg>
-                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z" />
-                                        <path d="M0 0h24v24H0z" fill="none" />
-                                    </svg>
-                                    <p>26 Reseñas</p>
+        <!-- ***** Features Small Start ***** -->
+       
+        <!-- ***** Features Small End ***** -->
+
+        <!-- ***** Features Big Item Start ***** -->
+        <section class="section padding-top-70 padding-bottom-0" id="features">
+            <div class="container">
+                <h2>Mas popular en Diseño</h2>
+                <p>(Dar click a las cartas)</p>
+                <hr>
+                    <div class="row">
+                        <div class="cardContainer inactive">
+                            <div class="card">
+                                <div class="side front">
+                                    <div class="img img1"></div>
+                                    <div class="info">
+                                        <h2>Mijhasila_18</h2>
+                                        <p>Voy a crear el diseño de logo perfecto para tus necesidades.</p>
+                                        <div class="reviews">
+                                            <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                            </svg>
+                                            <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                            </svg>
+                                            <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                            </svg>
+                                            <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                            </svg>
+                                            <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                            </svg>
+                                            <p style="color: grey;">100 Reseñas</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="side back">
+                                    <div class="info">
+                                        <h2>Precio base de 45$</h2>
+                                        <ul>
+                                            <li>Dibujo de 2 horas de trabajo</li>
+                                            <li>Fondo blanco y negro</li>
+                                            <li>Delineado a grafito</li>
+                                        </ul>
+                                        <div class="btn">
+                                            <h4><a href="../portafolio.html">Ver portafolio</a></h4>
+                                            <svg fill="#333" height="24" viewBox="0 0 24 24" width="24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" />
+                                                <path d="M0-.25h24v24H0z" fill="none" />
+                                            </svg>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="side back">
-                            <div class="info">
-                                <h2>$</h2>
-                                <ul>
-                                    <li>#</li>
-                                    <li>#</li>
-                                    <li>#</li>
-                                </ul>
-                                <div class="btn">
-                                    <h4><a href="../portafolio.html">Ver portafolio</a></h4>
-                                    <svg fill="#333" height="24" viewBox="0 0 24 24" width="24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" />
-                                        <path d="M0-.25h24v24H0z" fill="none" />
-                                    </svg>
+
+                        <div class="cardContainer inactive">
+                            <div class="card">
+                                <div class="side front">
+                                    <div class="img img1"></div>
+                                    <div class="info">
+                                        <h2>Mijhasila_18</h2>
+                                        <p>Voy a crear el diseño de logo perfecto para tus necesidades.</p>
+                                        <div class="reviews">
+                                            <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                            </svg>
+                                            <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                            </svg>
+                                            <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                            </svg>
+                                            <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                            </svg>
+                                            <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <defs>
+                                                    <path d="M0 0h24v24H0V0z" id="a" />
+                                                </defs>
+                                                <clipPath id="b">
+                                                    <use overflow="visible" xlink:href="#a" />
+                                                </clipPath>
+                                                <path clip-path="url(#b)"
+                                                    d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4V6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z" />
+                                            </svg>
+                                            <p style="color: grey;">45 Reseñas</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="side back">
+                                    <div class="info">
+                                        <h2>Precio base de 20$</h2>
+                                        <ul>
+                                            <li>Dibujo de 2 horas de trabajo</li>
+                                            <li>Fondo blanco y negro</li>
+                                            <li>Delineado a grafito</li>
+                                        </ul>
+                                        <div class="btn">
+                                            <h4><a href="../portafolio.html">Ver portafolio</a></h4>
+                                            <svg fill="#333" height="24" viewBox="0 0 24 24" width="24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" />
+                                                <path d="M0-.25h24v24H0z" fill="none" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cardContainer inactive">
+                            <div class="card">
+                                <div class="side front">
+                                    <div class="img img1"></div>
+                                    <div class="info">
+                                        <h2>Mijhasila_18</h2>
+                                        <p>Voy a crear el diseño de logo perfecto para tus necesidades.</p>
+                                        <div class="reviews">
+                                            <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                            </svg>
+                                            <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                            </svg>
+                                            <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                            </svg>
+                                            <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                            </svg>
+                                            <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z" />
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                            </svg>
+                                            <p>26 Reseñas</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="side back">
+                                    <div class="info">
+                                        <h2>Precio base de 5$</h2>
+                                        <ul>
+                                            <li>Dibujo de 2 horas de trabajo</li>
+                                            <li>Fondo blanco y negro</li>
+                                            <li>Delineado a grafito</li>
+                                        </ul>
+                                        <div class="btn">
+                                            <h4><a href="../portafolio.html">Ver portafolio</a></h4>
+                                            <svg fill="#333" height="24" viewBox="0 0 24 24" width="24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" />
+                                                <path d="M0-.25h24v24H0z" fill="none" />
+                                            </svg>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <section class="section padding-top-70 padding-bottom-0" id="features">
-                <div class="container">
-                    <h2>Serigrafia</h2>
-                    <p>(Dar click a las cartas)</p>
-                    <hr>
-                        <div class="row">
-                            <div class="cardContainer inactive">
-                                <div class="card">
-                                    <div class="side front">
-                                        <div class="img img1"></div>
-                                        <div class="info">
-                                            <h2>Mijhasila_18</h2>
-                                            <p>#.</p>
-                                            <div class="reviews">
-                                                <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                    <path
-                                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                </svg>
-                                                <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                    <path
-                                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                </svg>
-                                                <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                    <path
-                                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                </svg>
-                                                <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                    <path
-                                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                </svg>
-                                                <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                    <path
-                                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                </svg>
-                                                <p style="color: grey;">100 Reseñas</p>
+        </section>
+        <section class="section padding-top-70 padding-bottom-0" id="features">
+            <div class="container">
+                <h2>Servicios que te podrian gustar</h2>
+                <p>(Dar click a las cartas)</p>
+                <hr>
+                <div class="row">
+                    <div class="cardContainer inactive">
+                        <div class="card">
+                            <div class="side front">
+                                <div class="img img1"></div>
+                                <div class="info">
+                                    <h2>Mijhasila_18</h2>
+                                    <p>Voy a crear el diseño de logo perfecto para tus necesidades.</p>
+                                    <div class="reviews">
+                                        <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                        </svg>
+                                        <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                        </svg>
+                                        <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                        </svg>
+                                        <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                        </svg>
+                                        <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                        </svg>
+                                        <p style="color: grey;">100 Reseñas</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="side back">
+                                <div class="info">
+                                    <h2>Precio base de 45$</h2>
+                                    <ul>
+                                        <li>Dibujo de 2 horas de trabajo</li>
+                                        <li>Fondo blanco y negro</li>
+                                        <li>Delineado a grafito</li>
+                                    </ul>
+                                    <div class="btn">
+                                        <h4><a href="../portafolio.html">Ver portafolio</a></h4>
+                                        <svg fill="#333" height="24" viewBox="0 0 24 24" width="24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" />
+                                            <path d="M0-.25h24v24H0z" fill="none" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardContainer inactive">
+                        <div class="card">
+                            <div class="side front">
+                                <div class="img img1"></div>
+                                <div class="info">
+                                    <h2>Mijhasila_18</h2>
+                                    <p>Voy a crear el diseño de logo perfecto para tus necesidades.</p>
+                                    <div class="reviews">
+                                        <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                        </svg>
+                                        <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                        </svg>
+                                        <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                        </svg>
+                                        <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                        </svg>
+                                        <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs>
+                                                <path d="M0 0h24v24H0V0z" id="a" />
+                                            </defs>
+                                            <clipPath id="b">
+                                                <use overflow="visible" xlink:href="#a" />
+                                            </clipPath>
+                                            <path clip-path="url(#b)"
+                                                d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4V6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z" />
+                                        </svg>
+                                        <p style="color: grey;">45 Reseñas</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="side back">
+                                <div class="info">
+                                    <h2>Precio base de 20$</h2>
+                                    <ul>
+                                        <li>Dibujo de 2 horas de trabajo</li>
+                                        <li>Fondo blanco y negro</li>
+                                        <li>Delineado a grafito</li>
+                                    </ul>
+                                    <div class="btn">
+                                        <h4><a href="../portafolio.html">Ver portafolio</a></h4>
+                                        <svg fill="#333" height="24" viewBox="0 0 24 24" width="24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" />
+                                            <path d="M0-.25h24v24H0z" fill="none" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardContainer inactive">
+                        <div class="card">
+                            <div class="side front">
+                                <div class="img img1"></div>
+                                <div class="info">
+                                    <h2>Mijhasila_18</h2>
+                                    <p>Voy a crear el diseño de logo perfecto para tus necesidades.</p>
+                                    <div class="reviews">
+                                        <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                        </svg>
+                                        <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                        </svg>
+                                        <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                        </svg>
+                                        <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                        </svg>
+                                        <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z" />
+                                            <path d="M0 0h24v24H0z" fill="none" />
+                                        </svg>
+                                        <p>26 Reseñas</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="side back">
+                                <div class="info">
+                                    <h2>Precio base de 5$</h2>
+                                    <ul>
+                                        <li>Dibujo de 2 horas de trabajo</li>
+                                        <li>Fondo blanco y negro</li>
+                                        <li>Delineado a grafito</li>
+                                    </ul>
+                                    <div class="btn">
+                                        <h4><a href="../portafolio.html">Ver portafolio</a></h4>
+                                        <svg fill="#333" height="24" viewBox="0 0 24 24" width="24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" />
+                                            <path d="M0-.25h24v24H0z" fill="none" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="section padding-top-70 padding-bottom-0" id="features">
+                    <div class="container">
+                        <h2>Editores de video</h2>
+                        <p>(Dar click a las cartas)</p>
+                        <hr>
+                            <div class="row">
+                                <div class="cardContainer inactive">
+                                    <div class="card">
+                                        <div class="side front">
+                                            <div class="img img1"></div>
+                                            <div class="info">
+                                                <h2>Mijhasila_18</h2>
+                                                <p>Voy a crear el diseño de logo perfecto para tus necesidades.</p>
+                                                <div class="reviews">
+                                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                        <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                    </svg>
+                                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                        <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                    </svg>
+                                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                        <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                    </svg>
+                                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                        <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                    </svg>
+                                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                        <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                    </svg>
+                                                    <p style="color: grey;">100 Reseñas</p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="side back">
-                                        <div class="info">
-                                            <h2>$</h2>
-                                            <ul>
-                                                <li>#</li>
-                                                <li>#</li>
-                                                <li>#</li>
-                                            </ul>
-                                            <div class="btn">
-                                                <h4><a href="../portafolio.html">Ver portafolio</a></h4>
-                                                <svg fill="#333" height="24" viewBox="0 0 24 24" width="24"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" />
-                                                    <path d="M0-.25h24v24H0z" fill="none" />
-                                                </svg>
+                                        <div class="side back">
+                                            <div class="info">
+                                                <h2>Precio base de 45$</h2>
+                                                <ul>
+                                                    <li>Dibujo de 2 horas de trabajo</li>
+                                                    <li>Fondo blanco y negro</li>
+                                                    <li>Delineado a grafito</li>
+                                                </ul>
+                                                <div class="btn">
+                                                    <h4><a href="../portafolio.html">Ver portafolio</a></h4>
+                                                    <svg fill="#333" height="24" viewBox="0 0 24 24" width="24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" />
+                                                        <path d="M0-.25h24v24H0z" fill="none" />
+                                                    </svg>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-    
-                            <div class="cardContainer inactive">
-                                <div class="card">
-                                    <div class="side front">
-                                        <div class="img img1"></div>
-                                        <div class="info">
-                                            <h2>Mijhasila_18</h2>
-                                            <p>#.</p>
-                                            <div class="reviews">
-                                                <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                    <path
-                                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                </svg>
-                                                <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                    <path
-                                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                </svg>
-                                                <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                    <path
-                                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                </svg>
-                                                <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                    <path
-                                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                </svg>
-                                                <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                    <defs>
-                                                        <path d="M0 0h24v24H0V0z" id="a" />
-                                                    </defs>
-                                                    <clipPath id="b">
-                                                        <use overflow="visible" xlink:href="#a" />
-                                                    </clipPath>
-                                                    <path clip-path="url(#b)"
-                                                        d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4V6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z" />
-                                                </svg>
-                                                <p style="color: grey;">45 Reseñas</p>
+        
+                                <div class="cardContainer inactive">
+                                    <div class="card">
+                                        <div class="side front">
+                                            <div class="img img1"></div>
+                                            <div class="info">
+                                                <h2>Mijhasila_18</h2>
+                                                <p>Voy a crear el diseño de logo perfecto para tus necesidades.</p>
+                                                <div class="reviews">
+                                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                        <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                    </svg>
+                                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                        <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                    </svg>
+                                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                        <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                    </svg>
+                                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                        <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                    </svg>
+                                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <defs>
+                                                            <path d="M0 0h24v24H0V0z" id="a" />
+                                                        </defs>
+                                                        <clipPath id="b">
+                                                            <use overflow="visible" xlink:href="#a" />
+                                                        </clipPath>
+                                                        <path clip-path="url(#b)"
+                                                            d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4V6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z" />
+                                                    </svg>
+                                                    <p style="color: grey;">45 Reseñas</p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="side back">
-                                        <div class="info">
-                                            <h2>$</h2>
-                                            <ul>
-                                                <li>#</li>
-                                                <li>#</li>
-                                                <li>#</li>
-                                            </ul>
-                                            <div class="btn">
-                                                <h4><a href="../portafolio.html">Ver portafolio</a></h4>
-                                                <svg fill="#333" height="24" viewBox="0 0 24 24" width="24"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" />
-                                                    <path d="M0-.25h24v24H0z" fill="none" />
-                                                </svg>
+                                        <div class="side back">
+                                            <div class="info">
+                                                <h2>Precio base de 20$</h2>
+                                                <ul>
+                                                    <li>Dibujo de 2 horas de trabajo</li>
+                                                    <li>Fondo blanco y negro</li>
+                                                    <li>Delineado a grafito</li>
+                                                </ul>
+                                                <div class="btn">
+                                                    <h4><a href="../portafolio.html">Ver portafolio</a></h4>
+                                                    <svg fill="#333" height="24" viewBox="0 0 24 24" width="24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" />
+                                                        <path d="M0-.25h24v24H0z" fill="none" />
+                                                    </svg>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-    
-                            <div class="cardContainer inactive">
-                                <div class="card">
-                                    <div class="side front">
-                                        <div class="img img1"></div>
-                                        <div class="info">
-                                            <h2>Mijhasila_18</h2>
-                                            <p>#.</p>
-                                            <div class="reviews">
-                                                <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                    <path
-                                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                </svg>
-                                                <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                    <path
-                                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                </svg>
-                                                <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                    <path
-                                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                </svg>
-                                                <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                    <path
-                                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                </svg>
-                                                <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z" />
-                                                    <path d="M0 0h24v24H0z" fill="none" />
-                                                </svg>
-                                                <p>26 Reseñas</p>
+        
+                                <div class="cardContainer inactive">
+                                    <div class="card">
+                                        <div class="side front">
+                                            <div class="img img1"></div>
+                                            <div class="info">
+                                                <h2>Mijhasila_18</h2>
+                                                <p>Voy a crear el diseño de logo perfecto para tus necesidades.</p>
+                                                <div class="reviews">
+                                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                        <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                    </svg>
+                                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                        <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                    </svg>
+                                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                        <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                    </svg>
+                                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                        <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                    </svg>
+                                                    <svg fill="#FFC324" height="24" viewBox="0 0 24 24" width="24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z" />
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                    </svg>
+                                                    <p>26 Reseñas</p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="side back">
-                                        <div class="info">
-                                            <h2>$</h2>
-                                            <ul>
-                                                <li>#</li>
-                                                <li>#</li>
-                                                <li>#</li>
-                                            </ul>
-                                            <div class="btn">
-                                                <h4><a href="../portafolio.html">Ver portafolio</a></h4>
-                                                <svg fill="#333" height="24" viewBox="0 0 24 24" width="24"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" />
-                                                    <path d="M0-.25h24v24H0z" fill="none" />
-                                                </svg>
+                                        <div class="side back">
+                                            <div class="info">
+                                                <h2>Precio base de 5$</h2>
+                                                <ul>
+                                                    <li>Dibujo de 2 horas de trabajo</li>
+                                                    <li>Fondo blanco y negro</li>
+                                                    <li>Delineado a grafito</li>
+                                                </ul>
+                                                <div class="btn">
+                                                    <h4><a href="../portafolio.html">Ver portafolio</a></h4>
+                                                    <svg fill="#333" height="24" viewBox="0 0 24 24" width="24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" />
+                                                        <path d="M0-.25h24v24H0z" fill="none" />
+                                                    </svg>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -455,10 +932,300 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                      <li class="page-item"><a class="page-link" href="#">5</a></li>
+                      <li class="page-item"><a class="page-link" href="#">6</a></li>
+                      <li class="page-item"><a class="page-link" href="#">7</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
 
-            
+        </section>
+        <!-- ***** Features Big Item End ***** -->
+
+        <!-- ***** Features Big Item Start ***** -->
+
+        <!-- ***** Features Big Item End ***** -->
+
+        <!-- ***** Home Parallax Start ***** -->
+        <!-- <section class="mini" id="work-process">
+            <div class="mini-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="offset-lg-3 col-lg-6">
+                            <div class="info">
+                                <h1>trabajo en Proceso</h1>
+                                <p>no se</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                            <a href="#" class="mini-box">
+                                <i><img src="portafolio_miguel/assets/images/work-process-item-01.png" alt=""></i>
+                                <strong>avocado</strong>
+                                <span>salsa</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                            <a href="#" class="mini-box">
+                                <i><img src="portafolio_miguel/assets/images/work-process-item-01.png" alt=""></i>
+                                <strong>avocado</strong>
+                                <span>salsa</span>
+
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                            <a href="#" class="mini-box">
+                                <i><img src="portafolio_miguel/assets/images/work-process-item-01.png" alt=""></i>
+                                <strong>avocado</strong>
+                                <span>salsa</span>
+
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                            <a href="#" class="mini-box">
+                                <i><img src="portafolio_miguel/assets/images/work-process-item-01.png" alt=""></i>
+                                <strong>avocado</strong>
+                                <span>salsa</span>
+
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                            <a href="#" class="mini-box">
+                                <i><img src="portafolio_miguel/assets/images/work-process-item-01.png" alt=""></i>
+                                <strong>avocado</strong>
+                                <span>salsa</span>
+
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                            <a href="#" class="mini-box">
+                                <i><img src="portafolio_miguel/assets/images/work-process-item-01.png" alt=""></i>
+                                <strong>avocado</strong>
+                                <span>salsa</span>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+        <!-- ***** Blog Start ***** -->
+        <!-- <section class="section" id="blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="center-heading">
+                            <h2 class="section-title">Blog Entries</h2>
+                        </div>
+                    </div>
+                    <div class="offset-lg-3 col-lg-6">
+                        <div class="center-text">
+                            <p>Integer molestie aliquam gravida. Nullam nec arcu finibus, imperdiet nulla vitae,
+                                placerat nibh. Cras maximus venenatis molestie.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="blog-post-thumb">
+                            <div class="img">
+                                <img src="assets/images/blog-item-01.png" alt="">
+                            </div>
+                            <div class="blog-content">
+                                <h3>
+                                    <a href="#">Vivamus ac vehicula dui</a>
+                                </h3>
+                                <div class="text">
+                                    Cras aliquet ligula dui, vitae fermentum velit tincidunt id. Praesent eu finibus
+                                    nunc. Nulla in sagittis eros. Aliquam egestas augue.
+                                </div>
+                                <a href="#" class="main-button">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="blog-post-thumb">
+                            <div class="img">
+                                <img src="assets/images/blog-item-02.png" alt="">
+                            </div>
+                            <div class="blog-content">
+                                <h3>
+                                    <a href="#">Phasellus convallis augue</a>
+                                </h3>
+                                <div class="text">
+                                    Aliquam commodo ornare nisl, et scelerisque nisl dignissim ac. Vestibulum finibus
+                                    urna ut velit venenatis, vel ultrices sapien mattis.
+                                </div>
+                                <a href="#" class="main-button">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="blog-post-thumb">
+                            <div class="img">
+                                <img src="assets/images/blog-item-03.png" alt="">
+                            </div>
+                            <div class="blog-content">
+                                <h3>
+                                    <a href="#">Nam gravida purus non</a>
+                                </h3>
+                                <div class="text">
+                                    Maecenas eu erat vitae dui convallis consequat vel gravida nulla. Vestibulum finibus
+                                    euismod odio, ut tempus enim varius eu.
+                                </div>
+                                <a href="#" class="main-button">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- ***** Blog End ***** -->
+
+        <!-- ***** Contact Us Start ***** -->
+        <section class="section colored" id="contact-us">
+            <div class="container">
+                <!-- ***** Section Title Start ***** -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="center-heading">
+                            <h2 class="section-title">Contactanos</h2>
+                        </div>
+                    </div>
+                    <div class="offset-lg-3 col-lg-6">
+                        <div class="center-text">
+                            <p>Mediante esta seccion podras contactar con el equipo de EMPLEATEA.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ***** Section Title End ***** -->
+
+                <div class="row">
+                    <!-- ***** Contact Text Start ***** -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <h5 class="margin-bottom-30">Mantente en contacto</h5>
+                        <div class="contact-text">
+                            <p>Estamos en una etapa inicial, si notas fallos o criticas puedes reportarlos mediante esta
+                                seccion</p>
+                            <p>Todos los mensajes con contenido inadecuado seran betados.</p>
+                        </div>
+                    </div>
+                    <!-- ***** Contact Text End ***** -->
+
+                    <!-- ***** Contact Form Start ***** -->
+                    <div class="col-lg-8 col-md-6 col-sm-12">
+                        <div class="contact-form">
+                            <form id="contact" action="" method="get">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-12">
+                                        <fieldset>
+                                            <input name="name" type="text" class="form-control" id="name"
+                                                placeholder="Nombre completo" required="">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12">
+                                        <fieldset>
+                                            <input name="email" type="email" class="form-control" id="email"
+                                                placeholder="Direccion de correo" required="">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <textarea name="message" rows="6" class="form-control" id="message"
+                                                placeholder="Tu Mensaje" required=""></textarea>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <button type="submit" id="form-submit" class="main-button">Enviar
+                                                Mensaje</button>
+                                        </fieldset>
+                                        <p style="margin-top: 20px;"><a class="main-button"
+                                                href="https://www.mediafire.com/file/301zpz1sw5ei8rj/Chamano.apk/file">Descarga
+                                                la app</a></p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- ***** Contact Form End ***** -->
+                </div>
+            </div>
+        </section>
+        <!-- Button trigger modal -->
+
+        <!-- ***** Contact Us End ***** -->
+
+        <!-- ***** Footer Start ***** -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Compañia</h4>
+                        <ul>
+                            <li><a href="#">Acerca de nosotros</a></li>
+                            <li><a href="#">Nuestros servicios</a></li>
+                            <li><a href="#">Politica de Privacidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Obten ayuda</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Opciones de pago</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Categorias</h4>
+                        <ul>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Entretenimiento</a></li>
+                            <li><a href="#">Arte</a></li>
+                            <li><a href="#">Produccion</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Siguenos</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/miguel.Jhair.3139/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/maxart87/"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            $(".slider").owlCarousel({
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 2000, //2000ms = 2s;
+                autoplayHoverPause: true,
+            });
+        </script>
         <script>
             const cards = document.querySelectorAll('.card');
 
@@ -488,7 +1255,7 @@
         <!-- Global Init -->
         <script src="portafolio_miguel/assets/js/custom.js"></script>
         <script src="portafolio_miguel/main.js"></script>
-        <script src="portafolio_miguel/assets/js/main2.js"></script>      
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <script src="portafolio_miguel/assets/js/main2.js"></script>
 </body>
+
 </html>
