@@ -119,13 +119,14 @@ svg {
   height: 250px;
 }
 .front .img1 {
-  background-image: url(img/carta.jpg);
+  background-image: url(img/miguelito.jpg);
 }
 .front .img2 {
-  background-image: url(http://i.imgur.com/2p9VXAn.jpg);
+  background-image: url(img/vp.png);
+  align-items: center;
 }
 .front .img3 {
-  background-image: url(http://i.imgur.com/I5ABT2v.jpg);
+  background-image: url(img/brydon.jpeg);
 }
 
 .back {
